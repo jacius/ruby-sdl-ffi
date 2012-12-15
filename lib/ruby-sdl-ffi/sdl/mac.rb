@@ -158,7 +158,7 @@ if FFI::Platform.mac? and ($0 != "rsdl") and \
       typedef :pointer, :sel
       typedef :pointer, :ivar
       typedef :pointer, :nsclass
-      callback :imp, [:id, :sel, :varargs], :id
+      callback :imp, [:id, :sel, :ivar], :id
 
 
       class NSObject < NiceFFI::OpaqueStruct
