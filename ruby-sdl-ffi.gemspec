@@ -37,11 +37,11 @@ end
 
 $gemspec = Gem::Specification.new do |s|
 
-  s.name     = "ruby-sdl-ffi"
-  s.version  = "0.4"
-  s.authors  = ["John Croisant"]
-  s.email    = "jacius@gmail.com"
-  s.homepage = "http://github.com/rubygame/ruby-sdl-ffi/"
+  s.name     = "hybridgroup-ruby-sdl-ffi"
+  s.version  = "0.4.1"
+  s.authors  = ["John Croisant", "Adrian Zankich"]
+  s.email    = ["jacius@gmail.com", "adrian@hybridgroup.com"]
+  s.homepage = "http://github.com/hybridgroup/ruby-sdl-ffi"
   s.summary  = "Ruby-FFI bindings to SDL"
   s.description = <<EOF
 Ruby-SDL-FFI is a low-level binding to SDL and related libraries
@@ -50,14 +50,14 @@ Ruby without the need for a compiled C wrapper. It aims to
 be platform and Ruby implementation independent.
 EOF
 
-  s.rubyforge_project = "ruby-sdl-ffi"
+  s.rubyforge_project = "hybridgroup-ruby-sdl-ffi"
   s.has_rdoc = false
   s.files = Dir["*.rdoc", "lib/**/*.rb"] + ["ChangeLog.txt"]
   s.require_paths = ["lib"]
 
   s.required_ruby_version = ">= 1.8"
 
-  s.add_dependency( "nice-ffi", ">=0.2"   )
+  s.add_dependency("nice-ffi")
 
   s.requirements = ["SDL       >= 1.2.13",
                     "SDL_image >= 1.2.7  (optional)",

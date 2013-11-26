@@ -28,21 +28,21 @@
 #++
 
 
-require 'rake'
-
+require 'bundler'
+Bundler::GemHelper.install_tasks
 
 #############
 ##   GEM   ##
 #############
 
-require 'rake/gempackagetask'
+#require 'rubygems/packagetask'
 
 # Load ruby-sdl-ffi.gemspec, which defines $gemspec.
-load File.join( File.dirname(__FILE__), "ruby-sdl-ffi.gemspec" )
+#load File.join( File.dirname(__FILE__), "ruby-sdl-ffi.gemspec" )
 
-Rake::GemPackageTask.new( $gemspec ) do |pkg|
-  pkg.need_tar_bz2 = true
-end
+#Rake::GemPackageTask.new( $gemspec ) do |pkg|
+#  pkg.need_tar_bz2 = true
+#end
 
 
 ###############
@@ -101,7 +101,7 @@ CLEAN.include("ChangeLog.txt")
 ##  DOCS  ##
 ############
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 
 Rake::RDocTask.new do |rd|
   rd.title = "Ruby-SDL-FFI #{$gemspec.version} Docs"
