@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    hybridgroup-ruby-sdl-ffi (0.4.1)
+      nice-ffi (>= 0.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.9.0)
+    nice-ffi (0.4)
+      ffi (>= 0.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  hybridgroup-ruby-sdl-ffi!
